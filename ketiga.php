@@ -1,5 +1,4 @@
 <?php
-
 class Lingkaran
 {
     const PHI = 3.14;
