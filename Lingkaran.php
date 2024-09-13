@@ -11,3 +11,4 @@ class Lingkaran
         return 2*self::PHI*$this->jari_jari;
     }
 }
+?>
