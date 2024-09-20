@@ -8,7 +8,7 @@ class Pegawai {
     public $alamat;
 
     public function __construct($nip, $nama, $no_hp, $alamat) {
-        $this->nip = $nip;
+        $this->nip = $nip; 
         $this->nama = $nama;
         $this->no_hp = $no_hp;
         $this->alamat = $alamat;
