@@ -2,12 +2,12 @@
 namespace App\Model\Akademik;
 
 class Pegawai {
-    public $nip;
-    public $nama;
-    protected $no_hp;
-    public $alamat;
+    public int $nip;
+    public string $nama;
+    protected string $no_hp;
+    public string $alamat;
 
-    public function __construct($nip, $nama, $no_hp, $alamat) {
+    public function __construct(int $nip, string $nama, string $no_hp, string $alamat) {
         $this->nip = $nip; 
         $this->nama = $nama;
         $this->no_hp = $no_hp;
@@ -15,20 +15,25 @@ class Pegawai {
 
     }
 
-    public function cekIn() {
+    public function cekIn(): bool
+     {
+        echo $this->nama . " berhasil cek in.<br>";
         return true;
     }
 
-    public function cekOut() {
+    public function cekOut(): bool
+     {
+        echo $this->nama . " berhasil cek out.<br>";
         return true;
     }
 
-    public function getNoHp() {
+    protected function getNoHp(): string
+     {
         return $this->no_hp;
     }
 
-    public function setNoHp($no_hp) {
+    public function setNoHp(string $no_hp): void
+     {
         $this->no_hp = $no_hp;
-
     }
 }
