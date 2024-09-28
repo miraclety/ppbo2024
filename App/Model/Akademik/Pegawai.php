@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Model\Akademik;
 
 class Pegawai {
